@@ -676,6 +676,7 @@ def explanation():
 btn_explanation = Button(root, text="EXPLANATION", bd=5, width=15, bg="#CC00CC", relief="groove", command=explanation)
 btn_explanation.grid(row=3, column=4)
 
+
 def history():
     try:
         filename = "HISTORY.txt"
@@ -693,7 +694,14 @@ def history():
 btn_history = Button(root, text="HISTORY", bd=5, width=15, bg="cyan", relief="groove", command=history)
 btn_history.grid(row=4, column=4)
 
+
+def about():
+    messagebox.showinfo("ABOUT","Name: Utsab Sen\nEmail: utsabsen1999@gmail.com\nLOVELY PROFESSIONAL UNIVERSITY\n  <3 INDIA <3")
+
+btn_about = Button(root, text="ABOUT", bd=5, width=15, bg="grey", relief="groove", command=about)
+btn_about.grid(row=5, column=4)
+
 btn_exit = Button(root, text="EXIT", bd=5, width=15, bg="red", relief="groove", command=root.destroy)
-btn_exit.grid(row=5, column=4)
+btn_exit.grid(row=6, column=4)
 
 root.mainloop()
